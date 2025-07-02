@@ -1,0 +1,18 @@
+.btns {
+  width: 500px;             /* 원하는 너비 지정 */
+  margin: 0 auto;           /* 부모 내 가로 중앙 정렬 */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2열 그리드 */
+  gap: 20px;                /* 버튼 사이 간격 */
+  padding: 10px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;  
+}
+
+.btns h3 {
+  grid-column: 1 / -1;      /* h3가 그리드 전체 열 차지하게 */
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
