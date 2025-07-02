@@ -1,0 +1,39 @@
+.arrEmoji {
+    display: flex;
+    overflow-x: auto;
+    gap: 7rem;
+    margin: 1rem 10rem;
+    margin-top: 15vh;
+    scroll-behavior: smooth;
+    padding: 0rem;
+    cursor: pointer;
+}
+
+.arrEmoji::-webkit-scrollbar {
+    height: 20px;
+} 
+
+.arrEmoji::-webkit-scrollbar-thumb {
+    background-color: palevioletred;
+    border-radius: 9999px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+
+.arrEmoji::-webkit-scrollbar-track {
+  background-color: transparent; /* 트랙 배경 */
+}
+
+.arr-title {
+  font-size: 5rem;
+  background: linear-gradient(to right, purple, pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip:calc(0.7);
+  text-align: center;
+}
+
+.arr-text {
+  color: black;
+}

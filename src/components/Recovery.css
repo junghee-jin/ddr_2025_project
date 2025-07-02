@@ -1,0 +1,14 @@
+.recovery {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.arrRBtn {
+    flex: 1;
+}
+
+.recoveryMap {
+    flex: 1;
+}

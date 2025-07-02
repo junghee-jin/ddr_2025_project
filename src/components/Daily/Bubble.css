@@ -1,0 +1,92 @@
+.bubble-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.bubble-container {
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+  aspect-ratio: 16 / 9; /* 비율 고정 */
+}
+
+.bubble-bg {
+  width: 100%;
+}
+
+.bubble-content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  /* ✅ 고정 가로 폭 지정 */
+  max-width: 1000px;
+
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+
+  /* ✅ 텍스트 줄바꿈 설정 */
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.click {
+  font-size: 1rem;
+  color: black;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0px 100px 25px 100px;
+  border-radius: 1.5rem;
+  background-color: white;
+  font-weight: 600;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.click button {
+  background-color: white;
+  color: rgb(217, 89, 131);
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  border: none;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.button1 {
+  left: 20%;
+}
+
+.button2 {
+  left: 50%;
+}
+
+.button3 {
+  left: 80%;
+  white-space: nowrap;
+  padding: 0srem 1.2rem;
+  min-width: 160px;   
+  text-align: center;
+}
