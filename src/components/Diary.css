@@ -1,0 +1,41 @@
+/* 부모 컨테이너 flex로 좌우 배치 */
+.diary {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* 왼쪽 다이어리폼 영역 */
+.left-pane {
+  flex: 1; /* 좌우 50%씩 */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background-color: #f3f3a2; /* 임의 배경색 */
+}
+
+/* 오른쪽 다이어리리스트 영역 */
+.right-pane {
+  flex: 1; /* 좌우 50%씩 */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* 마음의 날씨 텍스트 */
+.mood-weather-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 오른쪽 정렬 */
+  gap: 0rem; /* 간격 줄이기 */
+  margin-bottom: 1rem; /* 아래 요소와 간격 */
+}
+
+.mood-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0; /* 기본 여백 제거 */
+  font-size: 1.5rem;
+}

@@ -1,0 +1,48 @@
+.diary-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+}
+
+.diary-content {
+  flex-grow: 1; 
+}
+
+.diary-content p,
+.diary-content h3 {
+  margin: 0;
+}
+
+.diary-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.diary-buttons button {
+  border-radius: 5rem;
+  background-color: pink;
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none !important;
+}
+
+
+.diary-emoji {
+  font-size: 4rem;
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  margin: 0rem;
+  padding: 0rem;
+}
